@@ -6,9 +6,6 @@ gsap.registerPlugin(ScrollTrigger);
 
 const Contact: React.FC = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
-  
-  // Vite .env file se access_key ko read karne ka sahi tarika
-  const accessKey = import.meta.env.VITE_WEB3FORMS_ACCESS_KEY;
 
   useEffect(() => {
     const ctx = gsap.context(() => {
@@ -38,8 +35,7 @@ const Contact: React.FC = () => {
   return (
     <div ref={sectionRef} className="w-full min-h-screen flex items-center py-16 md:py-24">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 w-full items-start">
- 
-        {/* Left Side: Text and Social Links */}
+
         <div className="contact-animate w-full">
           <span className="text-[#DCAE96] font-medium tracking-[0.3em] uppercase text-[10px] md:text-xs">
             Say Hello
@@ -68,14 +64,13 @@ const Contact: React.FC = () => {
           </div>
         </div>
 
-        {/* Right Side: Form */}
         <form 
           className="contact-animate flex flex-col gap-6 bg-white p-6 md:p-8 border border-black/5 shadow-sm w-full"
           action="https://api.web3forms.com/submit" 
           method="POST"
         >
-          {/* Key dynamically .env file se load hogi */}
-          <input type="hidden" name="access_key" value={accessKey} />
+ 
+          <input type="hidden" name="access_key" value="11aeffe6-cfc0-4e4f-ade0-3de3a2d98670" />
 
           <div className="flex flex-col gap-1 md:gap-2">
             <label className="text-[9px] uppercase tracking-[0.2em] font-bold opacity-40 italic">Full Name</label>
