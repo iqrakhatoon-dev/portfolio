@@ -37,8 +37,8 @@ const Project: React.FC = () => {
       id: "03",
       title: "AI Image Generator",
       desc: "I built a premium AI-powered image generation web application using Vanilla JavaScript and HuggingFace Inference API integration.",
-      tech: ["HTML5","CSS3", "Tailwind CSS","JavaScript (ES6+)", "OpenAI API"],
-      github: "Private Repository",
+      tech: ["HTML5","CSS3", "Tailwind CSS","JavaScript (ES6+)", "HuggingFace API"],
+      github: "Repository Available Upon Request",
       live: "https://iq-ai-image-generator.vercel.app",
     },
     {
